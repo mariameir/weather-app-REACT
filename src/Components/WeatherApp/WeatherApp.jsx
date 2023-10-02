@@ -10,15 +10,25 @@ import search from "../Assets/search.png";
 import snow from "../Assets/snow.png";
 import wind from "../Assets/wind.png";
 
-const WeatherApp = () => {
+const WeatherApp = async () => {
   const api_key = "19fdc60ea0c996811d84333961f1a1a1"
+  const search = async () =>{
+    const element = document.getElementsByClassName("cityInput");
+    if(element[0].value==="")
+    {
+      return 0;
+    }
+    let url =`https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`
 
+    let response = await fetch(url)
+
+  }
 
   return (
     <div className="container">
       <div className="top-bar">
         <input type="text" className="cityInput" placeholder="Pesquisa" />
-        <div className="search-icon">
+        <div className="search-icon" onClick={()=>{search()}}>
           <img src={search} alt="" />
         </div>
       </div>
