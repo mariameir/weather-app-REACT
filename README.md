@@ -25,7 +25,3 @@ git clone https://github.com/mariameir/weather-app.git
 cd weather-app
 npm install
 npm start
-
-## Como Usar
-
-1. Clone este repositório para o seu ambiente de desenvolvimento local.
