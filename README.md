@@ -20,12 +20,9 @@ O WeatherApp é uma aplicação web simples que permite aos usuários verificar 
 
 1. Clone este repositório para o seu ambiente de desenvolvimento local.
 
-`bash
+`
 git clone https://github.com/mariameir/weather-app.git 
-
 cd weather-app
-
 npm install
-
 npm start`
 
